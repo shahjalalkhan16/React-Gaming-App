@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.search_box{
+  position: relative;
+  display: inline-block;
+
+}
+
+.inputTag{
+  padding: 8px 28px 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: rgb(28, 26, 27);
+}
+.search_icon{
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+
+}
