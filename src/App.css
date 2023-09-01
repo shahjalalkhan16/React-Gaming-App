@@ -4,25 +4,104 @@
   padding: 2rem;
   text-align: center;
 }
-.search_box{
+
+.app {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background: #1f2123;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-right: 1rem;
+
+  outline: none;
+  color: #a1a1a1;
+  background: #1f2123;
+}
+
+.search-icon {
+  cursor: pointer;
+  color: red;
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+  width: 100%;
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.game {
+  margin: 1.5rem;
   position: relative;
-  display: inline-block;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
 
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
 }
 
-.inputTag{
-  padding: 8px 28px 8px 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  background-color: rgb(28, 26, 27);
+.game img {
+  width: 350px;
+  height: 300px;
 }
-.search_icon{
-  position: absolute;
-  top: 50%;
-  right: 8px;
-  transform: translateY(-50%);
-  font-size: 18px;
-  pointer-events: none;
+.game:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+  cursor: pointer;
+}
 
+.gameDetails {
+  display: flex;
+  gap: 20px;
 }
+
+.gameImage {
+  flex: 1;
+}
+
+.gameImage img {
+  max-width: 100%;
+}
+
+.gameInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 3px solid grey;
+  text-align: left;
+  padding-left: 20px;
+  
+}
+
